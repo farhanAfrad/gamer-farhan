@@ -1,0 +1,148 @@
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* common style*/
+.nav-item ul li, .banner ul li{
+    list-style: none;
+}
+
+
+
+
+/* nav style */
+.nav{
+    justify-content: space-between;
+    padding: 0 38px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-title{
+    gap: 20px;
+}
+.nav-title img {
+    width: 86px;
+    height: 40px;
+}
+.nav-title h2{
+    font-size: 45px; 
+    font-weight: 700; 
+}
+.nav-item ul{
+    gap: 32px;
+    padding: 0;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    color: #3C354F  
+}
+.nav-item-text{
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-button{
+    background: rgba(11, 2, 35, 0.10);
+    border: none;
+    padding: 16px 24px;
+    gap: 16px;
+    border-radius: 8px;
+    color: #3C354F
+}
+
+.nav-button a:hover{
+    background-color: #d7d2db;
+    
+}
+
+/* banner section style */
+.banner-section-container{
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.banner{
+    justify-content: space-between;
+}
+.banner ul{
+    padding: 0;
+}
+.banner-heading{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.banner-title{
+    font-size: 95px;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+.banner ul li{
+    margin-top: 6px;
+}
+.banner ul li a{
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #534C64
+}
+.banner-button{
+    margin-top: 40px;
+}
+.secondary-button{
+    margin-left: 10px;
+    background: #4EC5F7 !important;
+}
+
+
+
+/* for mobile devices */
+@media screen and (max-width:576px){
+    .nav, .nav ul{
+        flex-direction: column;
+    }
+    .banner-section-container{
+        background-position: bottom;
+        background-size: 100% 50%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .banner-image img{
+        margin-left: 20px;
+        width: 90%;  
+    }
+}
+
+/* for tablet devices */
+@media screen and (min-width:576px) and (max-width:768px) {
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .nav-item ul{
+        gap: 10px;
+    }
+    .nav-title{
+        gap: 5px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+    }
+}
