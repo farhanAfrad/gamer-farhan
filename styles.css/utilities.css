@@ -24,3 +24,19 @@
     border: none;
     padding: 20px 45px;
 }
+.gradient{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.title-typo{
+    font-size: 48px;
+    font-weight: 700;
+}
+.des-typo{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}

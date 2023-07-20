@@ -12,6 +12,7 @@ body{
 
 
 
+
 /* nav style */
 .nav{
     justify-content: space-between;
@@ -79,11 +80,6 @@ body{
     font-size: 95px;
     font-weight: 800;
     margin: 0;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
 }
 .banner ul li{
     margin-top: 6px;
@@ -105,27 +101,103 @@ body{
     background: #4EC5F7 !important;
 }
 
+/* we are gamer section styles */
+.we-are-gamer-section-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.we-are-gamer-content{
+    gap: 50px;
+}
+.gamer-information{
+    text-align: right;
+}
+.gamer-title{
+    margin-bottom: 24px;
+}
+.gamer-des{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.gamer-purpose{
+    margin-top: 22px;
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+#purpose{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* for mobile devices */
 @media screen and (max-width:576px){
-    .nav, .nav ul{
+    .nav, .nav ul,.we-are-gamer-content{
         flex-direction: column;
+        justify-content: center;
     }
     .banner-section-container{
         background-position: bottom;
-        background-size: 100% 50%;
+        background-size: 100% 53%;
     }
     .banner{
         flex-direction: column-reverse;
-        width: 100%;
         justify-content: center;
     }
 
-    .banner-image img{
-        margin-left: 20px;
+    .banner-image img,.gamer-image img{
         width: 90%;  
     }
+    .we-are-gamer-section-container{
+        margin-top: 32px;
+    }
+    .gamer-information{
+        text-align: center;
+    }
+    .gamer-image,.banner-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gamer-title{
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* for tablet devices */
@@ -137,12 +209,19 @@ body{
     .nav-item ul{
         gap: 10px;
     }
-    .nav-title{
-        gap: 5px;
+    .nav-title h2{
+        display:  none;
     }
     .banner{
         flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
+    }
+    .we-are-gamer-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .we-are-gamer-section-container{
+        width: 100%;
     }
 }
