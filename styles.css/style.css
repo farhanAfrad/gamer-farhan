@@ -20,7 +20,7 @@ body{
     background: #fff;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.nav-title{
+.nav-title,.footer-title{
     gap: 20px;
 }
 .nav-title img {
@@ -242,12 +242,69 @@ body{
     bottom: -70px;
     left: -25%;
 }
+/* games catagory section styles */
 
+.games-catagory-section{
+    margin-top: 120px;
+    padding: 120px 0;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.games-button{
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #0B0223;
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    padding: 10px;
+    border-radius: 50px;
 
+}
+.games-button:hover{
+    color: #ff42a5;
+    background: #fff;
+    border: 1px solid #ff42a5 ;
+}
+.buttons-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
 
-
-
-
+.footer{
+    background: #0B0223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 130px;
+}
+.footer-title{
+    color: #fff;
+}
+.footer .nav-item ul li a{
+    color: #fff;
+}
+.social-media{
+    height: 50px;
+}
+.social-media li{
+    width: 50px;
+}
+.social-media > li:hover a > img{
+    border-radius: 50%;
+    border: 5px solid #ff42a5;
+}
+.footer #footer-third-nav .third-nav li a{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+} 
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+}
 
 
 
@@ -353,7 +410,36 @@ body{
         width: 90%;
         text-align: center;
     }
+    .buttons-container{
+        grid-template-columns: repeat(3,1fr);
+        ;
+    }
+    .games-button img{
+        width: 30px;
+        height: 30px;
+    }
+    .games-button{
+        font-size: 12px;
+        font-weight: 400;
+        gap: 2px;
+    }
+    .footer .nav-item{
+        margin-bottom: 80px;
+    }
+    .footer .nav-item ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
 
+    }
+    .footer #footer-third-nav .third-nav{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-title{
+        margin-bottom: 50px;
+    }
 
 
 
